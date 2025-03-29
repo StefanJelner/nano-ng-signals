@@ -1,6 +1,6 @@
 // A simple registry for all the signals involved
 const registry = {
-    // An array of singal objects
+    // An array of signal objects
     signals: {} as Record<
         string,
         {
@@ -19,7 +19,7 @@ const registry = {
     // The default equality function to use for comparison
     equal: (a: unknown, b: unknown): boolean => Object.is(a, b),
     // Generates a simple unique id
-    getUid: (): string => String(window.performance.now()),
+    getUid: (): string => `${window.performance.now()}_${Math.random().toString(16).slice(2)}`,
     // Gets the value from a signal and triggers a get event
     getValue: (uid: string) => {
         if (uid in registry.signals && 'value' in registry.signals[uid]) {
