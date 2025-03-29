@@ -1,0 +1,18 @@
+{
+    "name": "nano-ng-signals",
+    "version": "0.0.1",
+    "description": "Zero dependency, superdupertiny Angular style signals for non Angular projects",
+    "author": "Stefan Jelner",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StefanJelner/nano-ng-signals.git"
+    },
+    "bugs": {
+        "url": "https://github.com/StefanJelner/nano-ng-signals/issues"
+    },
+    "keywords": [
+        "Angular",
+        "signals"
+    ]
+}
